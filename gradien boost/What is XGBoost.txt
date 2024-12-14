@@ -1,0 +1,25 @@
+What is XGBoost? 
+
+
+XGBoost stands for Extreme Gradient Boosting, which applies a Gradient Boosting technique based on decision trees. It constructs short, basic decision trees iteratively. Each tree is termed as a “weak learner” because of its high bias. XGBoost begins by building the first basic tree that has a poor performance. Then it builds another tree, trained to predict what the first tree, which is a weak learner, cannot do. The technique sequentially produces weaker learners, each correcting the previous tree before the stopping condition is met, such as the number of trees (estimators) to be created. XGBoost has additional advantages: training is speedy and can be parallelized/distributed across clusters
+
+
+Another definition:
+
+Extreme gradient boosting
+Extreme gradient boosting, also known as XGBoost, developed by Tianqi Chen (Chen & Guestrin, 2016), is another type of ensemble supervised ML algorithm used for both classification and regression problems. XGBoost is a type of gradient boosting method and is different from a gradient boosting model as follows:
+
+-
+
+As previously discussed under the gradient boosting section, the error rate of a gradient boosting model is used to calculate the gradient, which is essentially the partial derivative of the loss function. In contrast, XGBoost uses the second partial derivative of the loss function. Using the second partial derivative of the loss function will provide more info about the direction of the gradient.
+
+
+XGBoost uses L1 and L2 regularization which helps with model generalization and overfitting reduction.
+
+-
+XGBoost is usually faster than gradient boosting due to the parallelization of tree construction. (which means it can create trees simultaneously )
+
+-
+XGBoost can handle missing values within a data set; therefore, the data preparation is not as time-consuming.
+
+

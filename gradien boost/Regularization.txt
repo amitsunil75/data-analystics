@@ -1,0 +1,33 @@
+What is regularization ?
+
+Regularization in machine learning is a set of techniques used to prevent overfitting and improve the generalization performance of a model. Overfitting occurs when a model learns to capture noise or random fluctuations in the training data, rather than the underlying patterns or relationships. Regularization methods introduce additional constraints or penalties to the model during training, encouraging simpler models that generalize better to unseen data.
+
+Here are some common regularization techniques used in machine learning:
+
+L1 Regularization (Lasso):
+L1 regularization adds a penalty term to the loss function that is proportional to the absolute values of the model's coefficients(the weight of the feature ex: slope in LG)
+It encourages sparsity in the model by driving some of the coefficients to exactly zero, effectively performing feature selection.
+
+
+L2 Regularization (Ridge):
+L2 regularization adds a penalty term to the loss function that is proportional to the squared magnitudes of the model's coefficients.
+It penalizes large coefficients, encouraging them to be small, but not exactly zero. This helps to prevent extreme parameter values.
+
+
+Elastic Net Regularization:
+Elastic Net regularization combines both L1 and L2 regularization by adding a penalty term that is a linear combination of the L1 and L2 penalties.
+It provides a balance between the sparsity-inducing properties of L1 regularization and the stability of L2 regularization.
+
+
+Dropout Regularization:
+Dropout regularization is commonly used in deep learning models, especially neural networks.
+During training, random neurons are temporarily dropped out (set to zero) with a certain probability. This helps prevent co-adaptation of neurons and encourages the network to learn more robust features.
+
+
+Early Stopping:
+Early stopping is a simple regularization technique that stops the training process when the performance on a validation set starts to degrade.
+It prevents the model from overfitting by monitoring the validation error and stopping training when further optimization is likely to lead to worse generalization performance.
+
+
+Regularization techniques play a crucial role in improving the performance and robustness of machine learning models, especially in situations where the training data is limited or noisy. By introducing constraints or penalties to the model, regularization helps prevent overfitting and ensures that the model generalizes well to new, unseen data.
+

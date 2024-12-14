@@ -1,0 +1,14 @@
+What is approximate greedy algorithm?
+
+
+The "approximate greedy algorithm" in the context of XGBoost (Extreme Gradient Boosting) refers to the method used to find an approximate solution for the optimal split points during the construction of decision trees.
+
+In traditional decision tree algorithms, such as CART (Classification and Regression Trees), exhaustive search methods are used to find the best split points by evaluating all possible feature values. However, this approach becomes computationally expensive, especially when dealing with large datasets or datasets with many features.
+
+XGBoost employs a more efficient strategy known as the approximate greedy algorithm to find split points. Here's an overview of how it works:
+
+Histogram-based Approach: XGBoost uses a histogram-based approach to summarize the data distribution for each feature. Instead of using the exact feature values, the algorithm discretizes the continuous feature values into bins or buckets.
+Gradient-based Quantile Sketch: XGBoost constructs a summary of the data distribution for each feature using a gradient-based quantile sketch technique. This method efficiently approximates the quantiles of the feature values, allowing the algorithm to quickly identify potential split points.
+Finding Split Points: Rather than evaluating all possible split points, XGBoost uses the histogram summaries to identify a candidate set of split points. It then evaluates these candidate split points using an objective function (such as the gain in information or reduction in impurity) to select the best split point for each feature.
+Pruning: After constructing the tree, XGBoost may apply pruning techniques to remove redundant or unnecessary branches, further improving efficiency without significantly impacting performance.
+Overall, the approximate greedy algorithm in XGBoost allows for faster and more scalable training of decision trees by approximating the optimal split points efficiently. This approach enables XGBoost to handle large datasets and complex models while maintaining high accuracy and performance.

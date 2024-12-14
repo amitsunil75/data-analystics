@@ -1,0 +1,16 @@
+In L1 regularization, the model's coefficients refer to the parameters or weights associated with each feature in the model. These coefficients represent the strength of the relationship between each feature and the target variable in the context of a linear model.
+
+For example, in the case of linear regression, the model's coefficients correspond to the slope of the line for each feature. In more complex models like logistic regression or linear support vector machines (SVM), the coefficients represent the weights assigned to each feature in the decision boundary.
+
+Mathematically, if we denote the model's coefficients as 
+𝑤1,w2,w3,w4.........Wn
+
+where n is the number of features, then L1 regularization adds a penalty term to the loss function that is proportional to the sum of the absolute values of these coefficients:
+
+L1 penalty = refer the image in this folder
+
+where 
+𝜆
+λ is the regularization parameter that controls the strength of the regularization.
+
+The L1 penalty encourages sparsity in the model by driving some of the coefficients to exactly zero. This has the effect of performing feature selection, as features with zero coefficients are effectively ignored by the model. As a result, L1 regularization helps simplify the model and reduce its complexity, making it more interpretable and potentially improving its generalization performance.

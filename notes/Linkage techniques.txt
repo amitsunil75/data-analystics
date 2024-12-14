@@ -1,0 +1,10 @@
+Commmanly used linkage techniques are follows.
+
+
+Single Linkage (or Minimum Linkage): The distance between two clusters is defined as the minimum distance between any single data point in the first cluster and any single data point in the second cluster.
+
+Complete Linkage (or Maximum Linkage): The distance between two clusters is defined as the maximum distance between any single data point in the first cluster and any single data point in the second cluster.
+
+Average Linkage: The distance between two clusters is defined as the average distance between all pairs of data points, one from each cluster.
+
+Ward's Linkage: This method minimizes the variance when merging clusters. It calculates the increase in the total within-cluster variance that would result from merging two clusters.

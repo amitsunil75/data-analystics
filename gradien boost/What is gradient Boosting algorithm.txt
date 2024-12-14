@@ -1,0 +1,24 @@
+Gradient Boosting Algorithm.
+
+Gradient Boosting is a machine learning technique that is used for both regression and classification tasks. It is a type of ensemble method that combines several weak learners into a strong learner.
+
+Gradient Boosting algorithms build an additive model in a forward stagewise manner. Each new model is trained to minimize the loss function of the whole model, with respect to the residual errors made by the previous models. The algorithm takes an iterative approach, where each new model tries to correct the errors of the previous models.
+
+the error rate of a gradient boosting model is used to calculate the gradient, which is essentially the partial derivative of the loss function.
+
+What about the depth of the decision tree??
+
+In gradient boosting, the depth of the decision trees, often referred to as the "max depth" parameter, is a hyperparameter that controls the maximum depth of each individual decision tree in the ensemble.
+
+Gradient boosting works by sequentially adding decision trees to the ensemble, each one correcting the errors made by the previous trees. Each decision tree in the ensemble is typically a shallow tree, but by combining many of these trees, gradient boosting can create a highly accurate predictive model.
+
+The depth of each decision tree affects its complexity and capacity to capture intricate patterns in the data. A deeper tree can potentially fit the training data more closely, capturing complex relationships between features, but it also increases the risk of overfitting, especially if the dataset is noisy or contains outliers.
+
+By controlling the depth of the decision trees in gradient boosting, you can regulate the trade-off between model complexity and generalization ability. Setting a lower max depth can help prevent overfitting and improve the model's ability to generalize to new, unseen data, while setting a higher max depth may increase the model's capacity to capture intricate patterns in the training data but may also increase the risk of overfitting.
+
+It's important to tune the max depth parameter carefully based on the specific characteristics of your dataset and the desired balance between bias and variance in the model. Cross-validation and other hyperparameter optimization techniques can help identify the optimal value for the max depth parameter in gradient boosting.
+
+
+What is learning rate ?
+
+The learning rate is a hyperparameter that determines the size of the step taken during the optimization process in machine learning algorithms, particularly in gradient-based optimization algorithms like gradient descent.

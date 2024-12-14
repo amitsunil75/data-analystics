@@ -1,0 +1,21 @@
+How the initial points are selected for centroids in K means?
+
+
+Initial values will be from the dataset but once the iterations starts in select avg value as 
+next centroids.
+
+
+
+
+How the initial points are selected for centroids in K means ++?
+
+
+In K-means++, the initial centroids are chosen from the data points themselves, but they are selected in a way that favors points that are farther away from each other. This process ensures a more robust initial configuration for the centroids compared to completely random initialization.
+
+Here's how the centroids are chosen in K-means++:
+
+First Centroid: The first centroid is chosen randomly from the dataset.
+Subsequent Centroids: For each subsequent centroid, the probability of selecting a data point as the centroid is proportional to the square of its distance to the nearest centroid already chosen. This means that points farther away from existing centroids are more likely to be selected.
+By biasing the selection of centroids towards points that are farther apart from each other, K-means++ tends to produce more stable and better-performing clusterings compared to purely random initialization.
+
+So, in short, the initial centroids are chosen from the dataset, but the selection process is biased towards points that are farther apart, leading to a more robust initialization.
